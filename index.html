@@ -10,6 +10,9 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <!-- GOOGLE FONTS BELOW -->
+  <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+
 </head>
 
 <body>
@@ -20,16 +23,12 @@
         </a>
       </div>
       <div id="email">
-        <ul>
-          <li>c: (701) 550-0142</li>
-          <li>chad.m.carlson@gmail.com</li>
-        </ul>
       </div>
       <ul id="navLinks">
         <li><a href="#family">Family</a></li>
         <li><a href="#past">My History</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li>Link 4</li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -56,24 +55,26 @@
     <div id="name">
       <h1>Family</h1>
     </div>
-    <article class="content profile a">
+    <!-- <article class="content profile">
       <h2>Chad</h2>
       <img class="profilePic" alt="chad" src="images/chad.jpg">
       <p>Put something interesting here</p>
-    </article>
-    <article class="content profile b">
+    </article> -->
+    <article class="content profile">
       <h2>Heather</h2>
       <img class="profilePic" alt="heather" src="images/heather.jpg">
-      <p>Put something interesting here</p>
+      <p>Heather entered my life in January of 2012. We immediately hit it off and have been in love ever since. We got
+        married in 2015. She loves to travel and has a severe case of FOMO. If you ever need help planning a trip,
+        Heather is the one you need to talk too. </p>
     </article>
-    <article class="content profile c">
+    <article class="content profile">
       <h2>Teagan</h2>
       <img class="profilePic" alt="Teagan" src="images/teagan.jpg">
       <p>Teagan graced us with her presence early one morning in December. She is our first, and so far, only child and
         the only grand child in the family. Needless to say, she is going to be spoiled for awhile. So far, she most
         enjoys trying to fit her entire first in her mouth.</p>
     </article>
-    <article class="content profile d">
+    <article class="content profile">
       <h2>Rudy</h2>
       <img class="profilePic" alt="rudy" src="images/rudy.jpg">
       <p>Rudy joined our family in 2014. He used to have a wonderful life as a bachelor cat until the dogs showed up. He
@@ -81,14 +82,14 @@
         attention, but be warned, he does tend to play rough and not scared to use his teeth or claws (although he has
         yet to draw blood so he seems to know what he is doing).</p>
     </article>
-    <article class="content profile e">
+    <article class="content profile">
       <h2>Harper</h2>
       <img class="profilePic" alt="harper" src="images/harper.jpg">
       <p>Harper joined our family in 2015. She fits the cattle dog descriptions nearly perfectly, she is skittish and
         generally hates people until she gets to know you. After you become familiar she is very loyal and loving. Long
         naps in bed and chasing the laser are her favorite past times.</p>
     </article>
-    <article class="content profile f">
+    <article class="content profile">
       <h2>Kiwi</h2>
       <img class="profilePic" alt="kiwi" src="images/kiwi.jpg">
       <p>Kiwi is our newest pet. We got her as a puppy in 2017. Her unique name originates from when we were traveling
@@ -140,7 +141,7 @@
       <h1>Skills</h1>
     </div>
     <div class="projects">
-      <h2>Google Homepage Recreation</h2>
+      <h2>Google Homepage Re-creation</h2>
       <p>This is an attempt at copying the Google home page using only HTML and CSS. The Google Chrome "inspect element"
         feature was used heavily in this recreation. I learned about using image sprites to grab multiple sections of an
         image to create the logo.</p>
@@ -159,8 +160,10 @@
       </div>
     </div>
     <div class="projects">
-      <h2>Google Results Recreation</h2>
-      <p>The Google search result page recreation was very similar to the home page project. There were more elements to work with making the layout of the page tricker. I have already learned much better ways to layout the search result page by building this "About Me" page.</p>
+      <h2>Google Results Re-creation</h2>
+      <p>The Google search result page recreation was very similar to the home page project. There were more elements to
+        work with making the layout of the page tricker. I have already learned much better ways to layout the search
+        result page by building this "About Me" page.</p>
       <img class="screenshot" alt="google results" src="images/google_results.png">
       <div class="projectButtons">
         <div class="buttondiv">
@@ -177,11 +180,14 @@
     </div>
     <div class="projects">
       <h2>Rock, Paper, Scissors</h2>
-      <p>This project focused on using conditional Javascript statements to decide if the computer or user wins a round of rock, paper, scissors. There are also functions to keep the running tally of computer or user wins to determine who wins the game based on the number of rounds the user inputs they want to play. The CSS is less than desireable on this, but the project initially started as only working in the console.</p>
-      <img class="screenshot" alt="#" src="#">
+      <p>This project focused on using conditional Javascript statements to decide if the computer or user wins a round
+        of rock, paper, scissors. There are also functions to keep the running tally of computer or user wins to
+        determine who wins the game based on the number of rounds the user inputs they want to play. The CSS is less
+        than desireable on this, but the project initially started as only working in the console.</p>
+      <img class="screenshot" alt="rock paper scissors" src="images/rps.png">
       <div class="projectButtons">
         <div class="buttondiv">
-          <a href="#" target="_blank">
+          <a href="rock-paper-scissors/index.html" target="_blank">
             <button>Check It Out!</button>
           </a>
         </div>
@@ -194,7 +200,9 @@
     </div>
     <div class="projects">
       <h2>Etch-a-Sketch</h2>
-      <p>Event listeners, document query selectors, adding classes, attributes and apending/removing children were used heavily in making the Etch-a-Sketch. Like my Rock, Paper, Scissors project, this isn't very responsive and not visually appealing, but learning Javascript was the purpose of this exercise.</p>
+      <p>Event listeners, document query selectors, adding classes, attributes and apending/removing children were used
+        heavily in making the Etch-a-Sketch. Like my Rock, Paper, Scissors project, this isn't very responsive and not
+        visually appealing, but learning Javascript was the purpose of this exercise.</p>
       <img class="screenshot" alt="Etch-a-Sketch" src="images/etch.png">
       <div class="projectButtons">
         <div class="buttondiv">
@@ -210,11 +218,14 @@
       </div>
     </div>
   </section>
+  <section class="contact" id="contact">
+    <div id="name">
+      <h1>Contact Me</h1>
+    </div>
+
+  </section>
   <footer>
-    <!-- Do you have a logo? Social media links? Contact Info -->
-    <nav>
-      <!-- Duplicate your links from the top -->
-    </nav>
+
   </footer>
 </body>
 <script src="js/main.js"></script>
