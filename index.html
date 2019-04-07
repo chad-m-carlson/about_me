@@ -55,14 +55,15 @@
     <div id="name">
       <h1>Family</h1>
     </div>
-    <!-- <article class="content profile">
+    <div id="modal"></div>
+    <article class="content profile">
       <h2>Chad</h2>
       <img class="profilePic" alt="chad" src="images/chad.jpg">
       <p>Put something interesting here</p>
-    </article> -->
+    </article>
     <article class="content profile">
       <h2>Heather</h2>
-      <img class="profilePic" alt="heather" src="images/heather.jpg">
+      <img class="profilePic" alt="heather" id="heather" src="images/heather.jpg">
       <p>Heather entered my life in January of 2012. We immediately hit it off and have been in love ever since. We got
         married in 2015. She loves to travel and has a severe case of FOMO. If you ever need help planning a trip,
         Heather is the one you need to talk too. </p>
@@ -222,10 +223,54 @@
     <div id="name">
       <h1>Contact Me</h1>
     </div>
-
+    <div class="form">
+      <form>
+        <fieldset>
+          <legend>Send me a quick note</legend>
+          <div>
+            <label for="Name">Name</label>
+            <br />
+            <input id="Name" name="name" />
+          </div>
+          <br />
+          <div>
+            <label for="emailAddress">Email Address</label>
+            <br />
+            <input id="emailAddress" name="email" />
+          </div>
+          <br />
+          <div>
+            <label for="comment">Message</label>
+            <br />
+            <textarea id="comment" rows="10" cols="50">Comments</textarea>
+            <br />
+          </div>
+          <button>Send Message</button>
+        </fieldset>
+      </form>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/chad.carlson.790" target="_blank" class="fa">
+        <i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/ChadCar48722152" target="_blank" class="fa">
+        <i class="fab fa-twitter-square"></i></a>
+      <!-- <a href="mailto:chad.m.carlson@gmail.com" target="_blank" class="fa">
+        <i class="fas fa-envelope-open-text"></i></a> -->
+      <a href="https://www.linkedin.com/in/chad-carlson-5a459886/" target="_blank" class="fa">
+        <i class="fab fa-linkedin"></i></a>
+      <a href="https://www.github.com/chad-m-carlson" target="_blank" alt="github" class="fa">
+        <i class="fab fa-github-square"></i></a>
+    </div>
   </section>
   <footer>
-
+    <nav>
+      <ul id="navLinks">
+        <li><a href="#family">Family</a></li>
+        <li><a href="#past">My History</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#top">Top</a></li>
+      </ul>
+    </nav>
   </footer>
 </body>
 <script src="js/main.js"></script>
