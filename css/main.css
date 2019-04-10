@@ -15,7 +15,7 @@ h1 {
   color: #e3e3e3;
   font-weight: 500;
   font-size: 5vw;
-  z-index: 10;
+  z-index: 2;
 }
 
 section {
@@ -31,15 +31,6 @@ footer {
 
 nav {
   height: 50px;
-}
-
-#email {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  font-size: 10px;
-  color: #557A95;
-  margin-left: -200px;
 }
 
 #navLinks {
@@ -61,7 +52,6 @@ li {
   padding: 0px 10px;
   display: flex;
   justify-content: space-between;
-  border: 1px solid transparent;
 }
 
 nav a {
@@ -104,14 +94,17 @@ nav li:hover {
   grid-template-rows: 350px 500px;
   padding: 0px;
 }
-@keyframes fade-out{
+
+@keyframes fade-out {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0.2;
   }
 }
+
 .first img {
   animation: fade-out 5s ease-in;
   opacity: 0.2;
@@ -133,18 +126,6 @@ nav li:hover {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-}
-
-.social {
-  grid-column: 1 / span 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-}
-
-.social a:hover {
-  text-shadow: -3px 4px 9px #7a7878
 }
 
 .fa {
@@ -206,43 +187,68 @@ nav li:hover {
   transition: all .3s ease-out;
   width: 320px;
   height: 320px;
-  z-index: 100;
+  z-index: 3;
   border-radius: 10px;
+  cursor: zoom-in;
 }
 
 .bigProfilePic {
   width: 800px;
   height: 800px;
 }
+
 #modal {
   display: none;
+  cursor: zoom-out;
 }
 
-#modal img{
+#modal img {
   width: 600px;
   height: 600px;
   border-radius: 5px;
   border: 2px groove #557A95;
   position: relative;
   left: 200px;
-  z-index: 10;
+  z-index: 4;
 }
 
 .history {
   background-color: #B1A296;
-  grid-template-rows: 200px 1fr;
+  grid-template-rows: 200px 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+#modalA {
+  display: none;
+  cursor: zoom-out;
+}
+
+#modalA {
+  width: 762px;
+  height: 432px;
+  border-radius: 5px;
+  border: 2px groove #557A95;
+  position: relative;
+  /* left: 200px; */
+  z-index: 4;
 }
 
 .past {
   border: 1px solid black;
   height: auto;
-  width: 30vw;
   margin: 0 auto;
   padding: 10px;
-  /* opacity: 0.4; */
   border-radius: 10px;
   align-items: center;
+}
+
+#earlylife {
+  grid-column: 1 / span 2;
+}
+
+#helicopters {
+  grid-column: 1 / span 2;
 }
 
 .past h2 {
@@ -258,24 +264,32 @@ nav li:hover {
   grid-template-rows: 1fr;
   overflow: scroll;
   grid-gap: 20px;
+  width: 90vw;
 }
 
 .photo-reel p {
   width: 20vw;
   color: #e0dede;
   display: flex;
-  justify-content: center;
-  margin: 10px 0px 10px 0px;
+  margin: 0 auto;
+}
+
+#farmStory {
+  color: #e0dede;
+  display: flex;
+  margin: 10px auto;
+  width: auto;
+  grid-column: 1 / span all
 }
 
 .picDescription {
   display: flex;
   justify-content: center;
   font-style: italic;
-  font-size: 10px;
+  font-size: 12px;
 }
 
-.helipic {
+.pic {
   margin: 10px 0px 0px 10px;
   width: 384px;
   height: 216px;
@@ -284,7 +298,9 @@ nav li:hover {
   justify-content: space-evenly;
   border-radius: 10px;
 }
-
+.pic:hover {
+  cursor: zoom-in;
+}
 .skills {
   background-color: #7395AE;
   grid-template-columns: 1fr 1fr;
@@ -387,6 +403,36 @@ fieldset {
   color: #e3e3e3;
   border-radius: 3px;
 }
-footer #navlinks {
- margin: 0 auto;
+
+.social {
+  grid-column: 1 / span 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  margin-bottom: 30px;
+}
+
+.social a:hover {
+  text-shadow: -3px 4px 9px #7a7878
+}
+
+footer {
+  font-weight: 600;
+  display: flex;
+}
+
+.footerLinks {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.footerLinks a {
+  text-decoration: none;
+  color: #7395AE;
+}
+
+.footerLinks a:hover {
+  text-decoration: underline;
 }
