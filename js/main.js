@@ -35,7 +35,8 @@ profilePic.forEach((image) => {
     const w = window.innerWidth / 3 - 250;
     const h = window.pageYOffset + 100;
     modal.innerHTML = `<img src=${e.target.src}>`;
-    modal.setAttribute(`style`,`display: block; position: absolute; margin-left: ${w}px; top: ${h}px`);
+    modal.setAttribute(`style`,`display: block; position: absolute; 
+    margin-left: ${w}px; top: ${h}px`);
   });
 });
 modal.addEventListener('click', function () {
@@ -47,7 +48,8 @@ historyPic.forEach((image) => {
     const w = window.innerWidth / 3 - 250;
     const h = window.pageYOffset + 100;
     modalA.innerHTML = `<img src=${e.target.src}>`;
-    modalA.setAttribute(`style`,`display: block; position: absolute; margin-left: ${w}px; top: ${h}px`);
+    modalA.setAttribute(`style`,`display: block; position: absolute;
+    margin-left: ${w}px; top: ${h}px`);
   });
 });
 modalA.addEventListener('click', function () {

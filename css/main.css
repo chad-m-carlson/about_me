@@ -3,15 +3,19 @@ h1,
 div {
   margin: 0px;
 }
+p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
 
+}
 h1,
 h2 {
   /* FONT FOR H1 AND H2 TO BE CHANGED */
-  font-family: 'Special Elite';
-  text-transform: uppercase;
+  font-family: 'Roboto Mono', monospace;
 }
 
 h1 {
+  text-transform: uppercase;
   color: #e3e3e3;
   font-weight: 500;
   font-size: 5vw;
@@ -38,15 +42,13 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-#navLinks {
   margin: 0;
   color: #557A95;
 }
 
 nav,
 li {
+  font-family: 'Roboto Mono', monospace;
   font-weight: 600;
   margin-right: 50px;
   padding: 0px 10px;
@@ -167,7 +169,7 @@ nav li:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 2px solid #557A95;
+  border: 1px groove #557A95;
   overflow: hidden;
 }
 
@@ -214,7 +216,7 @@ nav li:hover {
 
 .history {
   background-color: #B1A296;
-  grid-template-rows: 200px 1fr 1fr;
+  grid-template-rows: 200px auto;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
@@ -224,19 +226,17 @@ nav li:hover {
   cursor: zoom-out;
 }
 
-#modalA {
+#modalA img {
   width: 762px;
   height: 432px;
   border-radius: 5px;
   border: 2px groove #557A95;
   position: relative;
-  /* left: 200px; */
-  z-index: 4;
+  left: 100px;
+  z-index: 4
 }
-
 .past {
-  border: 1px solid black;
-  height: auto;
+  border: 1px groove #557A95;
   margin: 0 auto;
   padding: 10px;
   border-radius: 10px;
@@ -278,7 +278,7 @@ nav li:hover {
   color: #e0dede;
   display: flex;
   margin: 10px auto;
-  width: auto;
+  width: 65vw;
   grid-column: 1 / span all
 }
 
@@ -315,7 +315,8 @@ nav li:hover {
 .projects {
   height: 500px;
   width: 500px;
-  border: 1px solid black;
+  border: 1px groove #B1A296;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -373,8 +374,10 @@ nav li:hover {
 }
 
 fieldset {
-  border-color: #7395AE;
-  border-width: 3px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px groove #737373;
   padding: 20px;
 }
 
@@ -402,6 +405,10 @@ fieldset {
   height: 25px;
   color: #e3e3e3;
   border-radius: 3px;
+}
+.contact button:hover {
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.24), 0 7px 5px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
 }
 
 .social {
