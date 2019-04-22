@@ -273,6 +273,7 @@ nav li:hover {
 #modal {
   display: none;
   cursor: zoom-out;
+  background-color: red;
 }
 
 #modal img {
