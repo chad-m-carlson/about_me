@@ -10,7 +10,6 @@ p {
 }
 h1,
 h2 {
-  /* FONT FOR H1 AND H2 TO BE CHANGED */
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -26,7 +25,21 @@ section {
   padding-bottom: 20px;
   display: grid;
 }
-
+.fa {
+  font-size: 7vw;
+  color: #557A95;
+  margin: 0vh 2vw 0vw 2vw;
+}
+#name {
+  grid-row: 1;
+  grid-column: 1 /span 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* ^^^GENERAL FORMATTING^^^ */
+/* HEADER */
 header,
 footer {
   height: 50px;
@@ -39,13 +52,13 @@ nav {
 
 #navLinks {
   list-style: none;
+  /* display should be flex */
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 0;
   color: #557A95;
 }
-
 nav,
 li {
   font-family: 'Roboto Mono', monospace;
@@ -54,6 +67,9 @@ li {
   padding: 0px 10px;
   display: flex;
   justify-content: space-between;
+}
+nav {
+  margin-right: 10px;
 }
 
 nav a {
@@ -82,7 +98,73 @@ nav li:hover {
   opacity: 0.4;
   position: fixed;
 }
-
+/* DROPDOWN MENU FOR SMALLER SCREENS */
+  .navbar {
+    overflow: hidden;
+    background-color: transparent;
+    display: none;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .fa-bars {
+    font-size: 20px;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: red;
+  } */
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 1vw;
+    background-color: inherit;
+    width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .show {
+    display: block;
+  }
+/* FIRST SECTION */
 .seperator {
   color: transparent;
   height: 0px;
@@ -120,22 +202,7 @@ nav li:hover {
   font-size: 11vw;
   margin-top: 100px;
 }
-
-#name {
-  grid-row: 1;
-  grid-column: 1 /span 3;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.fa {
-  font-size: 7vw;
-  color: #557A95;
-  margin: 0vh 2vw 0vw 2vw;
-}
-
+/* FAMILY SECTION */
 .content {
   transition: opacity 2s;
   border: 1px solid black;
@@ -147,14 +214,16 @@ nav li:hover {
   border-radius: 10px;
   align-items: center;
 }
-
+.content:hover {
+  transition: box-shadow 2s;
+  box-shadow: 10px 10px 13px 0px rgba(0,0,0,0.43);
+}
 .family {
   background-color: #938e94;
   grid-template-rows: 200px 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 20px;
 }
-
 .family h2 {
   font-size: 2vw;
   font-weight: 300;
@@ -171,6 +240,8 @@ nav li:hover {
   justify-content: space-between;
   border: 1px groove #557A95;
   overflow: hidden;
+  background-color: #b1a296;
+  box-shadow: 10px 10px 13px 0px rgba(0,0,0,0.16);
 }
 
 .profilePic {
@@ -213,7 +284,7 @@ nav li:hover {
   left: 200px;
   z-index: 4;
 }
-
+/* HISTORY SECTION */
 .history {
   background-color: #B1A296;
   grid-template-rows: 200px auto;
@@ -268,27 +339,17 @@ nav li:hover {
 }
 
 .photo-reel p {
-  width: 20vw;
+  width: 350px;
   color: #e0dede;
   display: flex;
   margin: 0 auto;
 }
-
-#farmStory {
-  color: #e0dede;
-  display: flex;
-  margin: 10px auto;
-  width: 65vw;
-  grid-column: 1 / span all
-}
-
 .picDescription {
   display: flex;
   justify-content: center;
   font-style: italic;
   font-size: 12px;
 }
-
 .pic {
   margin: 10px 0px 0px 10px;
   width: 384px;
@@ -301,17 +362,32 @@ nav li:hover {
 .pic:hover {
   cursor: zoom-in;
 }
+
+#farmStory {
+  color: #e0dede;
+  display: flex;
+  margin: 10px auto;
+  width: 65vw;
+  grid-column: 1 / span all
+}
+/* SKILLS SECTION */
 .skills {
   background-color: #7395AE;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 1fr 1fr;
+  grid-template-rows: 200px 1fr;
   grid-gap: 20px;
 }
 
 .skills #name {
   grid-column: 1 / span 2;
 }
-
+.projectContainer {
+  grid-column: 1 / span all;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+}
 .projects {
   height: 500px;
   width: 500px;
@@ -339,7 +415,7 @@ nav li:hover {
   text-align: center;
   padding: 0px 20px 0px 20px;
   color: #e3e3e3;
-  font-size: 1vw;
+  font-size: 17px;
 }
 
 .screenshot {
@@ -366,11 +442,11 @@ nav li:hover {
 .projectButtons button:hover {
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.24), 0 7px 5px 0 rgba(0, 0, 0, 0.19);
 }
-
+/* CONTACT SECTION */
 .contact {
   background-color: #938e94;
   grid-template-columns: 1fr;
-  grid-template-rows: 200px 500px 1fr;
+  grid-template-rows: 200px 450px 1fr;
 }
 
 fieldset {
@@ -390,7 +466,9 @@ fieldset {
 .contact div {
   align-content: center;
 }
-
+.form {
+  grid-row: 2;
+}
 .contact form {
   width: 350px;
   height: 250px;
@@ -423,7 +501,7 @@ fieldset {
 .social a:hover {
   text-shadow: -3px 4px 9px #7a7878
 }
-
+/* FOOTER */
 footer {
   font-weight: 600;
   display: flex;
@@ -442,4 +520,69 @@ footer {
 
 .footerLinks a:hover {
   text-decoration: underline;
+}
+/* @MEDIA WIDTHS */
+@media (max-width: 800px){
+  .photo-reel {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98vw;
+  }
+  .history {
+    grid-template-columns: 1fr;
+  }
+  #earlylife {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 1000px) {
+  .family {
+    grid-template-rows: 200px 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .photo-reel {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .first {
+    grid-template-columns: 1fr;
+  }
+  .skills {
+    grid-template-rows: 200px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .projectContainer {
+    grid-template-columns: 1fr;
+  }
+  li {
+    margin-right: 25px;
+  }
+  #name {
+    grid-column: 1 / span 2;
+  }
+}
+@media(max-width: 700px){
+  .family {
+    grid-template-rows: 200px 1fr auto;
+    grid-template-columns: 1fr;
+  }
+  li {
+    margin-right: 10px;
+  }
+  .navbar {
+    display: flex;
+  }
+  #name {
+    grid-column: 1;
+  }
+  #navLinks {
+    display: none;
+  }
 }

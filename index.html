@@ -23,6 +23,21 @@
         <a href="#top"><img alt="monogram" id="monogram" src="./images/monogram.png" />
         </a>
       </div>
+      <!-- Drop Menu inside -->
+      <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn" id="dropbtn"> 
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="#family">Family</a>
+            <a href="#past">My History</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <!-- Drop Menu inside -->
       <ul id="navLinks">
         <li><a href="#family">Family</a></li>
         <li><a href="#past">My History</a></li>
@@ -104,8 +119,8 @@
     <div id="name">
       <h1>My History</h1>
     </div>
-      <div id="modalA">
-      </div>
+    <div id="modalA">
+    </div>
     <article class="past" id="earlylife">
       <h2>Growing Up</h2>
       <div class="photo-reel">
@@ -121,13 +136,24 @@
           <img class="pic" alt="combine" src="images/combine.jpeg">
           <span class="picDescription">Harvest</span>
         </div>
-        <p id="farmStory">I grew up in rural North Dakota, 10 miles from the nearest tiny town, about five miles from the Canadian border. Most of my childhood was spent playing outside in the sandbox, building snow forts and riding with Dad in the tractor. Eventually, I would end up driving all the tractors and doing nearly all the work my dad did on the farm. I was never into sports, as my after school activities usually revolved around helping Dad. 
+        <p id="farmStory">I grew up in rural North Dakota, 10 miles from the nearest tiny town, about five miles from
+          the Canadian border. Most of my childhood was spent playing outside in the sandbox, building snow forts and
+          riding with Dad in the tractor. Eventually, I would end up driving all the tractors and doing nearly all the
+          work my dad did on the farm. I was never into sports, as my after school activities usually revolved around
+          helping Dad.
           <br />
           <br />
-          I always remember being around a computer. We started off with DOS, and I was able to learn to navigate that pretty early in life. I remember how great Windows 3.1 was when it came out. I built my first computer my senior year in high school and was the "IT assistant" during the three free hours I negotiated myself that year as well. I've always been quite comfortable using electronic devices.
+          I always remember being around a computer. We started off with DOS, and I was able to learn to navigate that
+          pretty early in life. I remember how great Windows 3.1 was when it came out. I built my first computer my
+          senior year in high school and was the "IT assistant" during the three free hours I negotiated myself that
+          year as well. I've always been quite comfortable using electronic devices.
           <br />
           <br />
-          My parents told me I needed to go out and get some education, and then come back and farm if I wanted to do that. During a career/college fair I went into the auditorium because it had the comfiest chairs and that presentation was about aviation maintenance. It was only a two year college and seemed like it would be fun so I decided I would go learn how to fix airplanes. After two years of college I ended up in Utah, and never made it back to ND to farm.
+          My parents told me I needed to go out and get some education, and then come back and farm if I wanted to do
+          that. During a career/college fair I went into the auditorium because it had the comfiest chairs and that
+          presentation was about aviation maintenance. It was only a two year college and seemed like it would be fun so
+          I decided I would go learn how to fix airplanes. After two years of college I ended up in Utah, and never made
+          it back to ND to farm.
         </p>
       </div>
     </article>
@@ -166,80 +192,87 @@
     <div id="name">
       <h1>Skills</h1>
     </div>
-    <div class="projects">
-      <h2>Google Homepage Re-creation</h2>
-      <p>This is an attempt at copying the Google home page using only HTML and CSS. The Google Chrome "inspect element"
-        feature was used heavily in this recreation. I learned about using image sprites to grab multiple sections of an
-        image to create the logo.</p>
-      <img class="screenshot" alt="google copy" src="images/google_home.png">
-      <div class="projectButtons">
-        <div class="buttondiv">
-          <a href="google-homepage/home.html" target="_blank">
-            <button>Check It Out!</button>
-          </a>
-        </div>
-        <div class="buttondiv">
-          <a href="#" target="_blank">
-            <button>See My Code on Github</button>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="projects">
-      <h2>Google Results Re-creation</h2>
-      <p>The Google search result page recreation was very similar to the home page project. There were more elements to
-        work with making the layout of the page tricker. I have already learned much better ways to layout the search
-        result page by building this "About Me" page.</p>
-      <img class="screenshot" alt="google results" src="images/google_results.png">
-      <div class="projectButtons">
-        <div class="buttondiv">
-          <a href="google-homepage/results.html" target="_blank">
-            <button>Check It Out!</button>
-          </a>
-        </div>
-        <div class="buttondiv">
-          <a href="#" target="_blank">
-            <button>See My Code on Github</button>
-          </a>
+    <div class="projectContainer">
+      <div class="projects">
+        <h2>Google Homepage Re-creation</h2>
+        <p>This is an attempt at copying the Google home page using only HTML and CSS. The Google Chrome "inspect
+          element"
+          feature was used heavily in this recreation. I learned about using image sprites to grab multiple sections of
+          an
+          image to create the logo.</p>
+        <img class="screenshot" alt="google copy" src="images/google_home.png">
+        <div class="projectButtons">
+          <div class="buttondiv">
+            <a href="google-homepage/home.html" target="_blank">
+              <button>Check It Out!</button>
+            </a>
+          </div>
+          <div class="buttondiv">
+            <a href="#" target="_blank">
+              <button>See My Code on Github</button>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="projects">
-      <h2>Rock, Paper, Scissors</h2>
-      <p>This project focused on using conditional Javascript statements to decide if the computer or user wins a round
-        of rock, paper, scissors. There are also functions to keep the running tally of computer or user wins to
-        determine who wins the game based on the number of rounds the user inputs they want to play. The CSS is less
-        than desireable on this, but the project initially started as only working in the console.</p>
-      <img class="screenshot" alt="rock paper scissors" src="images/rps.png">
-      <div class="projectButtons">
-        <div class="buttondiv">
-          <a href="rock-paper-scissors/index.html" target="_blank">
-            <button>Check It Out!</button>
-          </a>
-        </div>
-        <div class="buttondiv">
-          <a href="#" target="_blank">
-            <button>See My Code on Github</button>
-          </a>
+      <div class="projects">
+        <h2>Google Results Re-creation</h2>
+        <p>The Google search result page recreation was very similar to the home page project. There were more elements
+          to
+          work with making the layout of the page tricker. I have already learned much better ways to layout the search
+          result page by building this "About Me" page.</p>
+        <img class="screenshot" alt="google results" src="images/google_results.png">
+        <div class="projectButtons">
+          <div class="buttondiv">
+            <a href="google-homepage/results.html" target="_blank">
+              <button>Check It Out!</button>
+            </a>
+          </div>
+          <div class="buttondiv">
+            <a href="#" target="_blank">
+              <button>See My Code on Github</button>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="projects">
-      <h2>Etch-a-Sketch</h2>
-      <p>Event listeners, document query selectors, adding classes, attributes and apending/removing children were used
-        heavily in making the Etch-a-Sketch. Like my Rock, Paper, Scissors project, this isn't very responsive and not
-        visually appealing, but learning Javascript was the purpose of this exercise.</p>
-      <img class="screenshot" alt="Etch-a-Sketch" src="images/etch.png">
-      <div class="projectButtons">
-        <div class="buttondiv">
-          <a href="Etch_a_sketch/index.html" target="_blank">
-            <button>Check It Out!</button>
-          </a>
+      <div class="projects">
+        <h2>Rock, Paper, Scissors</h2>
+        <p>This project focused on using conditional Javascript statements to decide if the computer or user wins a
+          round
+          of rock, paper, scissors. There are also functions to keep the running tally of computer or user wins to
+          determine who wins the game based on the number of rounds the user inputs they want to play. The CSS is less
+          than desireable on this, but the project initially started as only working in the console.</p>
+        <img class="screenshot" alt="rock paper scissors" src="images/rps.png">
+        <div class="projectButtons">
+          <div class="buttondiv">
+            <a href="rock-paper-scissors/index.html" target="_blank">
+              <button>Check It Out!</button>
+            </a>
+          </div>
+          <div class="buttondiv">
+            <a href="#" target="_blank">
+              <button>See My Code on Github</button>
+            </a>
+          </div>
         </div>
-        <div class="buttondiv">
-          <a href="#" target="_blank">
-            <button>See My Code on Github</button>
-          </a>
+      </div>
+      <div class="projects">
+        <h2>Etch-a-Sketch</h2>
+        <p>Event listeners, document query selectors, adding classes, attributes and apending/removing children were
+          used
+          heavily in making the Etch-a-Sketch. Like my Rock, Paper, Scissors project, this isn't very responsive and not
+          visually appealing, but learning Javascript was the purpose of this exercise.</p>
+        <img class="screenshot" alt="Etch-a-Sketch" src="images/etch.png">
+        <div class="projectButtons">
+          <div class="buttondiv">
+            <a href="Etch_a_sketch/index.html" target="_blank">
+              <button>Check It Out!</button>
+            </a>
+          </div>
+          <div class="buttondiv">
+            <a href="#" target="_blank">
+              <button>See My Code on Github</button>
+            </a>
+          </div>
         </div>
       </div>
     </div>

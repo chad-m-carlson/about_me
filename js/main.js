@@ -3,8 +3,17 @@ const profile = document.querySelectorAll('.profile');
 const modal = document.getElementById('modal');
 const historyPic = document.querySelectorAll('.pic');
 const modalA = document.getElementById('modalA');
+const myDropdown = document.getElementById('myDropdown');
+const dropbtn = document.getElementById('dropbtn');
 
+dropbtn.addEventListener('click', (e) => {
+  myDropdown.classList.toggle('show');
+  console.log(e.target);
+});
 
+myDropdown.addEventListener('click', (e) => {
+  myDropdown.classList.toggle('show');
+});
 
 profilePic.forEach((x) => {
   x.addEventListener('mouseover', (e) => {
