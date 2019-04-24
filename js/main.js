@@ -58,16 +58,3 @@ historyPic.forEach((image) => {
 span.onclick = function() {
   modal.style.display = 'none';
 };
-
-historyPic.forEach((image) => {
-  image.addEventListener('click', function (e) {
-    const w = window.innerWidth / 3 - 250;
-    const h = window.pageYOffset + 100;
-    modalA.innerHTML = `<img src=${e.target.src}>`;
-    modalA.setAttribute(`style`,`display: block; position: absolute;
-    margin-left: ${w}px; top: ${h}px`);
-  });
-});
-modalA.addEventListener('click', function () {
-  this.style.display = 'none';
-});
