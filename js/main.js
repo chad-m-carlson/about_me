@@ -2,11 +2,12 @@ const profilePic = document.querySelectorAll('.profilePic');
 const profile = document.querySelectorAll('.profile');
 const modal = document.getElementById('modal');
 const historyPic = document.querySelectorAll('.pic');
-const modalA = document.getElementById('modalA');
 const myDropdown = document.getElementById('myDropdown');
 const dropbtn = document.getElementById('dropbtn');
 const span = document.getElementsByClassName('close')[0];
 const modalImg = document.getElementById('img01');
+const screenshot = document.querySelectorAll('.screenshot')
+const modalContent = document.querySelector('.modal-content')
 
 // SMALL WINDOW DROPDOWN MENU 
 dropbtn.addEventListener('click', (e) => {
@@ -55,6 +56,17 @@ historyPic.forEach((image) => {
     modalImg.src = this.src;
   });
 });
+screenshot.forEach((image) => {
+  image.addEventListener('click', function (e) {
+    modal.style.display = 'block';
+    modalImg.src = this.src;
+  });
+});
+
+// modalContent.addEventListener(('click'), (e) => {
+//   modalImg.classList.toggle('expand')
+// });
+
 span.onclick = function() {
   modal.style.display = 'none';
 };

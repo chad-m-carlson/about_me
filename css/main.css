@@ -92,6 +92,7 @@ nav li:hover {
 }
 
 #monogram {
+  display: none;
   width: 75px;
   height: 75px;
   padding: 5px;
@@ -204,7 +205,7 @@ nav li:hover {
 }
 /* FAMILY SECTION */
 .content {
-  transition: opacity 2s;
+  transition: opacity ease-in-out 2s;
   border: 1px solid black;
   height: 325px;
   width: 325px;
@@ -251,12 +252,12 @@ nav li:hover {
   border-radius: 5px;
 }
 
-.profileHover {
+.profile:Hover {
   transition: all .5s ease-in .2s;
   opacity: 1;
 }
 
-.profilePicHover {
+.profilePic:Hover {
   transition: all .3s ease-out;
   width: 320px;
   height: 320px;
@@ -309,6 +310,10 @@ nav li:hover {
   font-weight: bold;
   transition: 0.3s;
   cursor: pointer;
+}
+.expand {
+  width: 100%;
+  height: 1000px;
 }
 /* HISTORY SECTION */
 .history {
