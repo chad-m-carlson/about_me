@@ -40,6 +40,7 @@ section {
 }
 /* ^^^GENERAL FORMATTING^^^ */
 /* HEADER */
+
 header,
 footer {
   height: 50px;
@@ -48,11 +49,11 @@ footer {
 
 nav {
   height: 50px;
+  margin-right: 10px;
 }
 
 #navLinks {
   list-style: none;
-  /* display should be flex */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -68,9 +69,7 @@ li {
   display: flex;
   justify-content: space-between;
 }
-nav {
-  margin-right: 10px;
-}
+
 
 nav a {
   text-decoration: none;
