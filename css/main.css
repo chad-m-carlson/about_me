@@ -57,8 +57,8 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0;
-  color: #557A95;
+  margin: 0, auto;
+  color: 7395AE;
 }
 nav,
 li {
@@ -175,7 +175,7 @@ nav li:hover {
 
 .first {
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 350px 500px;
+  grid-template-rows: 350px 250px 250px;
   padding: 0px;
 }
 
@@ -201,6 +201,21 @@ nav li:hover {
   color: #557A95;
   font-size: 11vw;
   margin-top: 100px;
+}
+
+.summary {
+  grid-column: 1 / span 3;
+  margin: 0px 10em;
+  line-height: 1.1;
+}
+
+.summary p {
+  color: #557A95;
+  font-weight: 900;
+  font-size: 1.8em;
+  justify-content: space-evenly;
+  text-align: center;
+  
 }
 /* FAMILY SECTION */
 .content {
@@ -519,7 +534,8 @@ fieldset {
 }
 
 .social a:hover {
-  text-shadow: -3px 4px 9px #7a7878
+  text-shadow: -3px 4px 9px #7a7878;
+  transition: 0.5s all ease-in-out;
 }
 /* FOOTER */
 footer {

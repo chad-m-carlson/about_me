@@ -30,19 +30,19 @@
             <i class="fa fa-bars"></i>
           </button>
           <div class="dropdown-content" id="myDropdown">
-            <a href="#family">Family</a>
+            <!-- <a href="#family">Family</a> -->
             <a href="#past">My History</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+            <a href="#skills">Portfolio</a>
+            <!-- <a href="#contact">Contact</a> -->
           </div>
         </div>
       </div>
       <!-- Drop Menu inside -->
       <ul id="navLinks">
-        <li><a href="#family">Family</a></li>
+        <!-- <li><a href="#family">Family</a></li> -->
         <li><a href="#past">My History</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#skills">Portfolio</a></li>
+        <!-- <li><a href="#contact">Contact</a></li> -->
       </ul>
     </nav>
   </header>
@@ -51,49 +51,66 @@
     <div id="name">
       <h1>Chad Carlson</h1>
       <hr class="seperator">
+    </div> 
+    <div class="summary">
+      <p>
+        I'm a web developer helping make the internet a more functional and friendly place. My background in helicopter maintenance helps me look at the big picture and still pay attention to even the smallest of details  while designing web applications. Working in groups and by myself in remote locations has taught me to be innovative while problem solving whether I am on my own or working with a team. This attention to detail and problem solving has shown in my short time in web development that I will work tenaciously to come up with a solution.
+      </p>
+      <br />
+      <p>
+        I hope to work on projects that make the world an easier, more functional place to live in with fun and inspiring co-workers.
+
+      </p>
+    </div>
+    <div class="social">
+      <a href="https://www.github.com/chad-m-carlson" target="_blank" alt="github" class="fa">
+        <i class="fab fa-github-square"></i></a>
+      <a href="https://www.linkedin.com/in/chad-carlson-5a459886/" target="_blank" class="fa">
+        <i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/chad.carlson.790" target="_blank" class="fa">
+        <i class="fab fa-facebook"></i></a>
+        <!-- <a href="https://twitter.com/ChadCar48722152" target="_blank" class="fa"> -->
+        <!-- <i class="fab fa-twitter-square"></i></a> -->
+      <!-- <a href="mailto:chad.m.carlson@gmail.com" target="_blank" class="fa">
+        <i class="fas fa-envelope-open-text"></i></a> -->
     </div>
   </section>
   <section class="skills" id="skills">
     <div id="name">
-      <h1>Skills</h1>
+      <h1>Portfolio</h1>
     </div>
     <div class="projectContainer">
       <div class="projects">
-        <h2>Google Homepage Re-creation</h2>
-        <p>This is an attempt at copying the Google home page using only HTML and CSS. The Google Chrome "inspect
-          element"
-          feature was used heavily in this recreation. I learned about using image sprites to grab multiple sections of
-          an
-          image to create the logo.</p>
-          <img class="screenshot" alt="google copy" src="images/google_home.png">
+        <h2>Estimate My App</h2>
+        <p>This was my final project while at DevPoint Labs. We were asked to build an application to assist with DevPoint Studios bidding for new projects. My main contribution was developing all of the on click functions of the individual features and updating all of the subtotals and totals. This project is built with a Ruby on Rails back end, and React JS front end.
+        </p>
+          <img class="screenshot" alt="estimate my app" src="images/estimatemyapp.png">
         <div class="projectButtons">
           <div class="buttondiv">
-            <a href="https://chad-m-carlson.github.io/google-homepage/home.html" target="_blank">
+            <a href="https://studios-bidder-cc.herokuapp.com/" target="_blank">
               <button>Check It Out!</button>
             </a>
           </div>
           <div class="buttondiv">
-            <a href="https://github.com/chad-m-carlson/google-homepage" target="_blank">
+            <a href="https://github.com/devpointlabs/studios-bidder" target="_blank">
               <button>See My Code on Github</button>
             </a>
           </div>
         </div>
       </div>
       <div class="projects">
-        <h2>Google Results Re-creation</h2>
-        <p>The Google search result page recreation was very similar to the home page project. There were more elements
-          to
-          work with making the layout of the page tricker. I have already learned much better ways to layout the search
-          result page by building this "About Me" page.</p>
-          <img class="screenshot" alt="google results" src="images/google_results.png">
+        <h2>Trello Style Project Board</h2>
+        <p>A trello style project board that I modeled towards a helicopter work order management system. This project was built with Ruby on Rails using html.erb for the views. Most of the database queries are custom find by SQL queries. This project taught me tons about authentication with Devise and allowing different types of users to do different things as well as a good understanding of Active Record paramaters.
+        </p>
+          <img class="screenshot" alt="trollo" src="images/trollo.png">
         <div class="projectButtons">
           <div class="buttondiv">
-            <a href="https://chad-m-carlson.github.io/google-homepage/results.html" target="_blank">
+            <a href="https://rails-work-order.herokuapp.com/" target="_blank">
               <button>Check It Out!</button>
             </a>
           </div>
           <div class="buttondiv">
-            <a href="https://github.com/chad-m-carlson/google-homepage" target="_blank">
+            <a href="https://github.com/chad-m-carlson/trollo" target="_blank">
               <button>See My Code on Github</button>
             </a>
           </div>
@@ -101,12 +118,12 @@
       </div>
       <div class="projects">
         <h2>Rock, Paper, Scissors</h2>
-        <p>This project focused on conditional statements to determine who wins in games of Roshambo. It was also my first project modifying the DOM with JavaScript. I probably went overboard with games and rounds, but it gave me more experience by adding a level of complexity to the code. Click 'Check It Out' to go play a few rounds.
+        <p>This project focused on conditional statements to determine who wins in games of Roshambo. It was also my first project modifying the DOM with JavaScript. I probably went overboard with games and rounds, but it gave me more experience by adding a level of complexity to the code. Click 'Check It Out' to go play a few rounds. I have built other versions of this game using jQuery and ReactJS. 
         </p>
         <img class="screenshot" alt="rock paper scissors" src="images/rps.png">
         <div class="projectButtons">
           <div class="buttondiv">
-            <a href="rock-paper-scissors/index.html" target="_blank">
+            <a href="https://chad-m-carlson.github.io/rock-paper-scissors/" target="_blank">
               <button>Check It Out!</button>
             </a>
           </div>
@@ -161,9 +178,48 @@
           </div>
         </div>
       </div>
+      <div class="projects">
+        <h2>Google Homepage Re-creation</h2>
+        <p>This is an attempt at copying the Google home page using only HTML and CSS.  I learned about using image sprites to display multiple sections of
+          an
+          image to create the logo.</p>
+          <img class="screenshot" alt="google copy" src="images/google_home.png">
+        <div class="projectButtons">
+          <div class="buttondiv">
+            <a href="https://chad-m-carlson.github.io/google-homepage/home.html" target="_blank">
+              <button>Check It Out!</button>
+            </a>
+          </div>
+          <div class="buttondiv">
+            <a href="https://github.com/chad-m-carlson/google-homepage" target="_blank">
+              <button>See My Code on Github</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projects">
+        <h2>Google Results Re-creation</h2>
+        <p>The Google search result page recreation was very similar to the home page project. There were more elements
+          to
+          work with making the layout of the page tricker. I have already learned much better ways to layout the search
+          result page by building this "About Me" page.</p>
+          <img class="screenshot" alt="google results" src="images/google_results.png">
+        <div class="projectButtons">
+          <div class="buttondiv">
+            <a href="https://chad-m-carlson.github.io/google-homepage/results.html" target="_blank">
+              <button>Check It Out!</button>
+            </a>
+          </div>
+          <div class="buttondiv">
+            <a href="https://github.com/chad-m-carlson/google-homepage" target="_blank">
+              <button>See My Code on Github</button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="family" id="family">
+  <!-- <section class="family" id="family">
     <div id="name">
       <h1>Family</h1>
     </div>
@@ -214,7 +270,7 @@
               settled on Kiwi. Her favorite past times are chasing Rudy and getting attention from anyone who will give it to
               her.</p>
             </article>
-          </section>
+          </section> -->
           <section class="history" id="past">
             <div id="name">
               <h1>My History</h1>
@@ -320,26 +376,14 @@
         </fieldset>
       </form>
     </div> -->
-    <div class="social">
-      <a href="https://www.facebook.com/chad.carlson.790" target="_blank" class="fa">
-        <i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com/ChadCar48722152" target="_blank" class="fa">
-        <i class="fab fa-twitter-square"></i></a>
-      <!-- <a href="mailto:chad.m.carlson@gmail.com" target="_blank" class="fa">
-        <i class="fas fa-envelope-open-text"></i></a> -->
-      <a href="https://www.linkedin.com/in/chad-carlson-5a459886/" target="_blank" class="fa">
-        <i class="fab fa-linkedin"></i></a>
-      <a href="https://www.github.com/chad-m-carlson" target="_blank" alt="github" class="fa">
-        <i class="fab fa-github-square"></i></a>
-    </div>
   </section>
   <footer>
 
     <ul class="footerLinks">
       <li><a href="#top">Top</a></li>
-      <li><a href="#family">Family</a></li>
+      <!-- <li><a href="#family">Family</a></li> -->
       <li><a href="#past">My History</a></li>
-      <li><a href="#skills">Skills</a></li>
+      <li><a href="#skills">Portfolio</a></li>
     </ul>
 
   </footer>
