@@ -643,6 +643,17 @@ footer {
   .modal-content {
     width: 100%;
   }
+
+  .projects {
+    width: 25.0rem;
+  }
+  .projects img {
+    height: 20rem;
+    width: 20rem;
+  }
+  .projects p {
+    font-size: 1.5rem;
+  }
   #modal{
     width: 100%;
     height: 100%;
