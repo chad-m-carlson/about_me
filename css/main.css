@@ -184,6 +184,18 @@ nav li:hover {
   padding: .0rem;
 }
 
+.first::before{
+  content: '';
+  background-image: url(../images/IMG_0407.jpg);
+  background-size: cover;
+  background-clip: bottom;
+  animation: fade-out 5s ease-in;
+  opacity: 0.2;
+  position: absolute;
+  width: 100%;
+  height: 85.0rem;
+}
+
 @keyframes fade-out {
   from {
     opacity: 1;
@@ -194,18 +206,11 @@ nav li:hover {
   }
 }
 
-.first img {
-  animation: fade-out 5s ease-in;
-  opacity: 0.2;
-  position: absolute;
-  width: 100%;
-  height: 85.0rem;
-}
 
 .first h1 {
   color: #557A95;
   font-size: 11vw;
-  margin-top: 10.0rem;
+  margin-top: 5.0rem;
 }
 
 .summary {
@@ -394,7 +399,7 @@ nav li:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  border-radius: 1.0rem;
+  /* border-radius: 1.0rem; */
 }
 .pic:hover {
   cursor: zoom-in;
@@ -535,7 +540,7 @@ fieldset {
   justify-content: center;
   align-items: center;
   z-index: 2;
-  margin-bottom: 3.0rem;
+  margin-top: 3.0rem;
 }
 
 
@@ -651,10 +656,20 @@ footer {
     width: 85%;
   }
   .projects p {
-    font-size: 1.5rem;
+    font-size: 3.5rem;
   }
   .projects h2 {
-    font-size: 2rem;
+    font-size: 4rem;
+  }
+
+  .summary {
+    margin: 1rem;
+  }
+  .summary p {
+    font-size: 3.2rem;
+  }
+  .photo-reel {
+    width: 95%;
   }
   #modal{
     width: 100%;
