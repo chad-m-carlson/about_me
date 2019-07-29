@@ -645,14 +645,17 @@ footer {
   }
 
   .projects {
-    width: 25.0rem;
+    width: 33.0rem;
   }
   .projects img {
-    height: 20rem;
-    width: 20rem;
+    height: 25rem;
+    width: 25rem;
   }
   .projects p {
     font-size: 1.5rem;
+  }
+  .projects h2 {
+    font-size: 2rem;
   }
   #modal{
     width: 100%;
