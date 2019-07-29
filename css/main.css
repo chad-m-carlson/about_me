@@ -645,11 +645,10 @@ footer {
   }
 
   .projects {
-    width: 33.0rem;
+    width: 95%;
   }
   .projects img {
-    height: 25rem;
-    width: 25rem;
+    width: 85%;
   }
   .projects p {
     font-size: 1.5rem;
