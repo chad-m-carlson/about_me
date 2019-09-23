@@ -1,4 +1,4 @@
-const profilePic = document.querySelectorAll('.profilePic');
+ const profilePic = document.querySelectorAll('.profilePic');
 const profile = document.querySelectorAll('.profile');
 const modal = document.getElementById('modal');
 const historyPic = document.querySelectorAll('.pic');
