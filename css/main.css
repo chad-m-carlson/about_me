@@ -215,17 +215,30 @@ nav li:hover {
 
 .summary {
   grid-column: 1 / span 3;
-  margin: .0rem 10em;
+  /* margin: auto; */
   line-height: 1.1;
 }
 
 .summary p {
   color: #557A95;
   font-weight: 900;
-  font-size: 2.2em;
+  font-size: 3.2rem;
   justify-content: space-evenly;
   text-align: center;
   padding: 3rem;
+  vertical-align: middle;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+.summary p:first-child{
+  margin-top: 20vh;
+}
+
+.description{
+  background-color: #B1A296;
+  height: 100vh;
+  margin: auto, 100rem;
 }
 /* FAMILY SECTION */
 .content {
@@ -345,6 +358,7 @@ nav li:hover {
   grid-template-rows: 20.0rem auto;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2.0rem;
+  padding-bottom: 6rem;
 }
 
 .past {
@@ -418,6 +432,7 @@ nav li:hover {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 20.0rem 1fr;
   grid-gap: 2.0rem;
+  padding-bottom: 8rem;
 }
 
 .skills #name {
@@ -437,7 +452,7 @@ nav li:hover {
   border-radius: 1.0rem;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 auto 3rem auto;
   align-items: center;
   justify-content: space-around;
 }
